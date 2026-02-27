@@ -1,6 +1,9 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
 
 export default function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
     const navItems = [
         { name: "Home", href: "/" },
         { name: "Projects", href: "/projects" },
@@ -27,14 +30,39 @@ export default function Header() {
                     ))}
                 </nav>
 
-                {/* Mobile menu button placeholder for future implementation */}
-                <button className="md:hidden text-gray-600">
-                    <span className="sr-only">Open menu</span>
+                {/* Mobile menu button */}
+                <button
+                    className="md:hidden text-gray-600"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label="Toggle menu"
+                >
                     <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                        {menuOpen ? (
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        ) : (
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                        )}
                     </svg>
                 </button>
             </div>
+
+            {/* Mobile dropdown */}
+            {menuOpen && (
+                <div className="md:hidden absolute top-16 left-0 right-0 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-lg">
+                    <nav className="flex flex-col px-6 py-4 gap-1">
+                        {navItems.map((item) => (
+                            <Link
+                                key={item.name}
+                                href={item.href}
+                                onClick={() => setMenuOpen(false)}
+                                className="text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors px-4 py-3 rounded-lg"
+                            >
+                                {item.name}
+                            </Link>
+                        ))}
+                    </nav>
+                </div>
+            )}
         </header>
     );
 }

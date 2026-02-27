@@ -89,7 +89,7 @@ export default function About() {
                                     <span className="text-xs text-gray-400 whitespace-nowrap mt-0.5">Aug 2025 – Dec 2026</span>
                                 </div>
                                 <p className="text-sm text-gray-600">M.Eng. Computer Science</p>
-                                <p className="text-xs text-gray-400 mt-1">Blacksburg, VA · Expected Dec 2026</p>
+                                <p className="text-xs text-gray-400 mt-1">Alexandria, VA · Expected Dec 2026</p>
                             </div>
 
                         </div>
