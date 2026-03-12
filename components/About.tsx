@@ -35,7 +35,7 @@ export default function About() {
                                         After graduating with my B.S. in May 2025, I transitioned into the Master&apos;s program here at VT. I&apos;ve really enjoyed the depth of graduate-level coursework; it provides a level of intuition that goes far beyond the surface. My focus has now shifted toward making AI, dashboards, and analysis production-ready.
                                     </p>
                                     <p>
-                                        After spending my third year of undergrad formalizing my data science/ML knowledge, I&apos;m now focused on using various cloud platforms to take my models and visualizations out of a notebook and put them into the world for people to actually use. I&apos;m currently applying this to my own interests by building a Steam game recommendation platform on AWS — it&apos;s been the perfect way to bridge my fascination with AI with my love for gaming.
+                                        After spending my third year of undergrad formalizing my data science/ML knowledge, I&apos;m now focused on using various cloud platforms to take my models and visualizations out of a notebook and put them into the world for people to actually use.
                                     </p>
                                 </div>
                             </div>

@@ -12,6 +12,14 @@ const projects = [
         detailLink: "/projects/komatsu"
     },
     {
+        title: "Portfolio Pulse",
+        description: "AI-powered crypto portfolio advisor combining neural collaborative filtering and real-time market regime analysis. Personalized token recommendations backed by 200k+ wallet interactions and dynamic risk optimization.",
+        technologies: ["Python", "SQL", "TypeScript", "TensorFlow", "React", "Next.js", "FastAPI", "AWS", "Docker"],
+        image: "/crypto.png",
+        repoLink: "https://github.com/HemuTheReddy/PortfolioPulse",
+        siteLink: "https://main.d2ekmsbtyf11hx.amplifyapp.com/"
+    },
+    {
         title: "Salesforce PowerBI Dashboard",
         description: "Custom-built dashboard analyzing Salesforce SEC filings data using PowerBI and Python. Provides interactive views into revenue, expenses, and growth trends.",
         technologies: ["PowerBI", "Python", "Excel"],
