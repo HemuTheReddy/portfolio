@@ -20,6 +20,14 @@ const projects = [
         siteLink: "https://main.d2ekmsbtyf11hx.amplifyapp.com/"
     },
     {
+        title: "ClinicalMind",
+        description: "Multi-agent AI research assistant for patients with chronic and rare conditions (lupus, MS, RA, IBD). Uses a LangGraph pipeline with PubMed + Pinecone retrieval, LLM critique scoring, and Llama-3.3-70b summarization to surface evidence-backed clinical briefs.",
+        technologies: ["Python", "TypeScript", "LangGraph", "FastAPI", "Next.js", "Pinecone", "Groq"],
+        image: "/clinicalmind.png",
+        repoLink: "https://github.com/HemuTheReddy/clinicalmind",
+        siteLink: "https://clinicalmind-liard.vercel.app/"
+    },
+    {
         title: "Salesforce PowerBI Dashboard",
         description: "Custom-built dashboard analyzing Salesforce SEC filings data using PowerBI and Python. Provides interactive views into revenue, expenses, and growth trends.",
         technologies: ["PowerBI", "Python", "Excel"],

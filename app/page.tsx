@@ -82,12 +82,12 @@ export default function Home() {
                 siteLink="https://main.d2ekmsbtyf11hx.amplifyapp.com/"
               />
               <ProjectCard
-                title="Manhattan Minutes: NYC Taxi Pulse"
-                description="A comprehensive geospatial and statistical analysis of NYC Taxi trip data, combining backend statistical modeling with a production-ready interactive dashboard."
-                technologies={["Python", "Dash"]}
-                image="/NYC.png"
-                repoLink="https://github.com/HemuTheReddy/NYC_Taxi_Visualizations"
-                siteLink="https://nyc-taxi-dashboard-539265320212.us-east1.run.app/"
+                title="ClinicalMind"
+                description="Multi-agent AI research assistant for patients with chronic and rare conditions (lupus, MS, RA, IBD). Uses a LangGraph pipeline with PubMed + Pinecone retrieval, LLM critique scoring, and Llama-3.3-70b summarization to surface evidence-backed clinical briefs."
+                technologies={["Python", "TypeScript", "LangGraph", "FastAPI", "Next.js", "Pinecone", "Groq"]}
+                image="/clinicalmind.png"
+                repoLink="https://github.com/HemuTheReddy/clinicalmind"
+                siteLink="https://clinicalmind-liard.vercel.app/"
               />
               <ProjectCard
                 title="Predicting Stress with AI"
